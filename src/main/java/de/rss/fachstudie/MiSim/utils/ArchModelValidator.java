@@ -63,8 +63,6 @@ public class ArchModelValidator {
 //                System.out.println("WARNING CHAOSMONKEYS: Monkey number: " + i + " tries to shutdown instances after simulation has been finished. Semantic error");
 //            }
 //
-//            if(microserviceNames.contains(parser.monkeys[i].getMicroservice())){
-//                //walk over all microserives to adress correct one
 //                        }
 //                    }
 //                }
@@ -178,5 +176,6 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
