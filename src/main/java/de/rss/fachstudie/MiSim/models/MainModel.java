@@ -131,7 +131,6 @@ public class MainModel extends Model {
 
         ExpModelParser expParser = new ExpModelParser(exp_model);
 
-//        if (validator.valideArchModel(archParser)) {
             long startTime = System.nanoTime();
 
             MainModel model = new MainModel(null, ExpModelParser.simulation_meta_data.get("model_name"), true, true);
@@ -159,8 +158,7 @@ public class MainModel extends Model {
             long experimentTime = System.nanoTime() - tempTime;
             tempTime = System.nanoTime();
 
-            //exp.report();
-            exp.finish();
+                        exp.finish();
 
             if (!ExpModelParser.simulation_meta_data.get("report").equals("none")) {
                 ExportReport exportReport = new ExportReport(model);
@@ -178,9 +176,6 @@ public class MainModel extends Model {
             System.out.println("Report took:                " + model.timeFormat(reportTime));
             System.out.println("Execution took:             " + model.timeFormat(executionTime));
             Toolkit.getDefaultToolkit().beep();
-//        } else {
-//            System.out.println("Your inserted input was not valide. Please check correctness of you JSON file.");
-//        }
     }
 
     public double getSimulationTime() {
@@ -462,8 +457,7 @@ public class MainModel extends Model {
 
         // Trigger Event every second to collect data
         StatisticEvent statisticEvent = new StatisticEvent(this, "", false, simulationTime / datapoints);
-        //StatisticEvent statisticEvent = new StatisticEvent(this, "", false, 0.1);
-        statisticEvent.schedule(new TimeSpan(0, timeUnit));
+                statisticEvent.schedule(new TimeSpan(0, timeUnit));
 
         //Fire off the finish event which is called during at the end of the simulation
         FinishEvent event = new FinishEvent(this, "", false);
@@ -474,3 +468,7 @@ public class MainModel extends Model {
         System.out.println(this.presentTime() + ": \t" + message);
     }
 }
+
+
+
+

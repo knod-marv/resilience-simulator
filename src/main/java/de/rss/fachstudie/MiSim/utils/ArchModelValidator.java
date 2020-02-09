@@ -69,19 +69,6 @@ public class ArchModelValidator {
 //                    //adress correct micro service
 //                    if(parser.monkeys[i].getMicroservice().equals(parser.microservices[j].getName())){
 //                        //check if number of instances that are going to be killed are bigger than existing instances
-//                        if(parser.monkeys[i].getInstances() > parser.microservices[j].getInstances()){
-//                            System.out.println("WARNING CHAOSMONEKYS: Monkey number : " + i + " tries to kill more instances then available");
-//                        }
-//                    }
-//                }
-//            } else {
-//                System.out.println("ERROR CHAOSMONKEYS: Could not find microservice : " + parser.monkeys[i].getMicroservice() + " : in chaos monkey number: " + i);
-//                errorCounter++;
-//            }
-//
-//        }
-
-
         /*
         Verify microservice graph architekture
         and dependencie probability
@@ -93,17 +80,7 @@ public class ArchModelValidator {
             /*
             Verify patterns in a microservice
              */
-            /*
-            for (int patterns = 0; patterns < parser.microservices[microService].getPatterns().length; patterns++) {
-                if (!parser.microservices[microService].getPatterns()[patterns].containsKey("Thread Pool") &&
-                        !parser.microservices[microService].getPatterns()[patterns].keySet().isEmpty()) {
-                    System.out.println("ERROR MICROSERVICE: Currently only Thread Pool Pattern in a microservices allowed. " +
-                            parser.microservices[microService].getName() + " has a different pattern.");
-                    errorCounter++;
-                }
-            }
-            */
-
+            
 
             //walk over all operations
             for(int operation = 0; operation < parser.microservices[microService].getOperations().length; operation++){
@@ -124,21 +101,7 @@ public class ArchModelValidator {
                     /*
                     Verify patterns in operations
                      */
-                    /*
-                    for (int patterns = 0; patterns < parser.microservices[microService].getOperations()[operation].getPatterns().length; patterns++) {
-
-                        if (!parser.microservices[microService].getOperations()[operation].getPatterns()[patterns].equals("Circuit Breaker")
-                                && !parser.microservices[microService].getOperations()[operation].getPatterns()[patterns].isEmpty()) {
-                            System.out.println("ERROR MICROSERVICES: Microservice: " + parser.microservices[microService].getName() + "operation: " +
-                                    parser.microservices[microService].getOperations()[operation].getName() + " -- uses a not verified pattern. " +
-                                    "Currently only \"Circuit Breaker\" is allowed");
-                            errorCounter++;
-                        }
-
-
-                    }
-                    */
-
+                    
                     //get targeted micro service
                     String tempMicroserviceName = parser.microservices[microService].getOperations()[operation].getDependencies()[dependencie].getService();
                     //get targeted operation name
@@ -185,3 +148,7 @@ public class ArchModelValidator {
         }
     }
 }
+
+
+
+
