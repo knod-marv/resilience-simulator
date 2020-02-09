@@ -58,8 +58,7 @@ public class StartEvent extends Event<MessageObject> {
                 }
             }
         }
-        //model.log("retuning instance: " + i);
-        return model.services.get(id).get(i);
+                return model.services.get(id).get(i);
     }
 
     /**
@@ -176,3 +175,4 @@ public class StartEvent extends Event<MessageObject> {
         model.taskQueueStatistics.get(id).update(model.taskQueues.get(id).size());
     }
 }
+
