@@ -79,8 +79,6 @@ public class ArchModelValidator {
 //                errorCounter++;
 //            }
 //
-//        }
-
 
         /*
         Verify microservice graph architekture
@@ -161,5 +159,6 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
