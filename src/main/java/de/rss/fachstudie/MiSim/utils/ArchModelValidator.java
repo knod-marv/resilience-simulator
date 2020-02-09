@@ -59,8 +59,6 @@ public class ArchModelValidator {
 //        //Walk over all chaos monkeys
 //        for(int i = 0; i < parser.monkeys.length; i++){
 //            //Check whether the time of current monkey lies in between the bounds of simulation
-//            if(parser.monkeys[i].getInterval() >= Double.parseDouble(parser.simulation.get("duration"))){
-//                System.out.println("WARNING CHAOSMONKEYS: Monkey number: " + i + " tries to shutdown instances after simulation has been finished. Semantic error");
 //            }
 //
 //                        }
@@ -176,6 +174,7 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
 
