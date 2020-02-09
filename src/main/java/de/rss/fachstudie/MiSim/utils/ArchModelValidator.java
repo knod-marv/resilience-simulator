@@ -67,15 +67,10 @@ public class ArchModelValidator {
 //                //walk over all microserives to adress correct one
 //                for(int j = 0; j < parser.microservices.length; j++){
 //                    //adress correct micro service
-//                    if(parser.monkeys[i].getMicroservice().equals(parser.microservices[j].getName())){
-//                        //check if number of instances that are going to be killed are bigger than existing instances
-//                        if(parser.monkeys[i].getInstances() > parser.microservices[j].getInstances()){
-//                            System.out.println("WARNING CHAOSMONEKYS: Monkey number : " + i + " tries to kill more instances then available");
 //                        }
 //                    }
 //                }
 //            } else {
-//                System.out.println("ERROR CHAOSMONKEYS: Could not find microservice : " + parser.monkeys[i].getMicroservice() + " : in chaos monkey number: " + i);
 //                errorCounter++;
 //            }
 //
@@ -185,3 +180,4 @@ public class ArchModelValidator {
         }
     }
 }
+
