@@ -178,9 +178,6 @@ public class MainModel extends Model {
             System.out.println("Report took:                " + model.timeFormat(reportTime));
             System.out.println("Execution took:             " + model.timeFormat(executionTime));
             Toolkit.getDefaultToolkit().beep();
-//        } else {
-//            System.out.println("Your inserted input was not valide. Please check correctness of you JSON file.");
-//        }
     }
 
     public double getSimulationTime() {
@@ -474,3 +471,4 @@ public class MainModel extends Model {
         System.out.println(this.presentTime() + ": \t" + message);
     }
 }
+
