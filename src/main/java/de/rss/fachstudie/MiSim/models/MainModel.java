@@ -462,8 +462,7 @@ public class MainModel extends Model {
 
         // Trigger Event every second to collect data
         StatisticEvent statisticEvent = new StatisticEvent(this, "", false, simulationTime / datapoints);
-        //StatisticEvent statisticEvent = new StatisticEvent(this, "", false, 0.1);
-        statisticEvent.schedule(new TimeSpan(0, timeUnit));
+                statisticEvent.schedule(new TimeSpan(0, timeUnit));
 
         //Fire off the finish event which is called during at the end of the simulation
         FinishEvent event = new FinishEvent(this, "", false);
@@ -474,3 +473,4 @@ public class MainModel extends Model {
         System.out.println(this.presentTime() + ": \t" + message);
     }
 }
+
