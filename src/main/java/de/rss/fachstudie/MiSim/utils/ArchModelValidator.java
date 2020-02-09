@@ -39,8 +39,6 @@ public class ArchModelValidator {
 //                            }
 //
 //                            //Last run was unsucessfull
-//                            if(k == parser.microservices[j].getOperations().length -1){
-//                                System.out.println("ERROR GENERATORS: Could not find operation : "
 //                            }
 //                        }
 //                    }
@@ -169,6 +167,7 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
 
