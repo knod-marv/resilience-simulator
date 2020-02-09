@@ -32,23 +32,13 @@ public class ArchModelValidator {
 //                    //found correct micro service
 //                    if(parser.microservices[j].getName().equals(parser.generators[i].getMicroservice())){
 //                        //Walk over all operations
-//                        for (int k = 0; k < parser.microservices[j].getOperations().length; k++){
-//                            //Search for operation in correctly found micro service
-//                            if(parser.microservices[j].getOperations()[k].getName().equals(parser.generators[i].getOperation())){
-//                                continue outerLoop;
 //                            }
 //
-//                            //Last run was unsucessfull
-//                            if(k == parser.microservices[j].getOperations().length -1){
-//                                System.out.println("ERROR GENERATORS: Could not find operation : "
-//                                        + parser.generators[i].getOperation() + " : in micro service : " + parser.microservices[j].getName() );
-//                                errorCounter++;
 //                            }
 //                        }
 //                    }
 //                }
 //            } else {
-//                System.out.println("ERROR GERNERATORS: Could not find microservice : " + parser.generators[i].getMicroservice() + " : from generator number: " + i );
 //                errorCounter++;
 //            }
 //        }
@@ -57,25 +47,12 @@ public class ArchModelValidator {
 //         Verify Chaos Monkeys
 //         */
 //        //Walk over all chaos monkeys
-//        for(int i = 0; i < parser.monkeys.length; i++){
-//            //Check whether the time of current monkey lies in between the bounds of simulation
-//            if(parser.monkeys[i].getInterval() >= Double.parseDouble(parser.simulation.get("duration"))){
-//                System.out.println("WARNING CHAOSMONKEYS: Monkey number: " + i + " tries to shutdown instances after simulation has been finished. Semantic error");
 //            }
 //
-//            if(microserviceNames.contains(parser.monkeys[i].getMicroservice())){
-//                //walk over all microserives to adress correct one
-//                for(int j = 0; j < parser.microservices.length; j++){
-//                    //adress correct micro service
-//                    if(parser.monkeys[i].getMicroservice().equals(parser.microservices[j].getName())){
-//                        //check if number of instances that are going to be killed are bigger than existing instances
-//                        if(parser.monkeys[i].getInstances() > parser.microservices[j].getInstances()){
-//                            System.out.println("WARNING CHAOSMONEKYS: Monkey number : " + i + " tries to kill more instances then available");
 //                        }
 //                    }
 //                }
 //            } else {
-//                System.out.println("ERROR CHAOSMONKEYS: Could not find microservice : " + parser.monkeys[i].getMicroservice() + " : in chaos monkey number: " + i);
 //                errorCounter++;
 //            }
 //
@@ -185,3 +162,12 @@ public class ArchModelValidator {
         }
     }
 }
+
+
+
+
+
+
+
+
+
