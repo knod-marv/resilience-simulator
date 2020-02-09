@@ -168,11 +168,10 @@ public class StartEvent extends Event<MessageObject> {
         // Statistics
         // CPU
         model.cpuStatistics.get(id).get(msEntity.getSid()).update(model.serviceCPU.get(id).get(msEntity.getSid()).getMeanUsage(model.getStatisticChunks()));
-        //model.serviceCPU.get(id).get(msEntity.getSid()).collectUsage();
-        // Thread
-        model.activeThreadStatistics.get(id).get(msEntity.getSid()).update(model.serviceCPU.get(id).get(msEntity.getSid()).getActiveThreads().size());
+                        model.activeThreadStatistics.get(id).get(msEntity.getSid()).update(model.serviceCPU.get(id).get(msEntity.getSid()).getActiveThreads().size());
         model.existingThreadStatistics.get(id).get(msEntity.getSid()).update(model.serviceCPU.get(id).get(msEntity.getSid()).getExistingThreads().size());
         // Task Queue
         model.taskQueueStatistics.get(id).update(model.taskQueues.get(id).size());
     }
 }
+
