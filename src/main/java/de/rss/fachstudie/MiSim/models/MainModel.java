@@ -131,7 +131,6 @@ public class MainModel extends Model {
 
         ExpModelParser expParser = new ExpModelParser(exp_model);
 
-//        if (validator.valideArchModel(archParser)) {
             long startTime = System.nanoTime();
 
             MainModel model = new MainModel(null, ExpModelParser.simulation_meta_data.get("model_name"), true, true);
@@ -474,3 +473,4 @@ public class MainModel extends Model {
         System.out.println(this.presentTime() + ": \t" + message);
     }
 }
+
