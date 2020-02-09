@@ -32,8 +32,6 @@ public class ArchModelValidator {
 //                    //found correct micro service
 //                    if(parser.microservices[j].getName().equals(parser.generators[i].getMicroservice())){
 //                        //Walk over all operations
-//                        for (int k = 0; k < parser.microservices[j].getOperations().length; k++){
-//                            //Search for operation in correctly found micro service
 //                            }
 //
 //                            }
@@ -164,6 +162,7 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
 
