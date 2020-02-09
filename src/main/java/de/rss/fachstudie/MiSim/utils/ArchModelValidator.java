@@ -57,8 +57,6 @@ public class ArchModelValidator {
 //         Verify Chaos Monkeys
 //         */
 //        //Walk over all chaos monkeys
-//        for(int i = 0; i < parser.monkeys.length; i++){
-//            //Check whether the time of current monkey lies in between the bounds of simulation
 //            }
 //
 //                        }
@@ -174,6 +172,7 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
 
