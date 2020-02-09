@@ -28,8 +28,6 @@ public class ArchModelValidator {
 //            //Know that searched for microservice exists  Microservice
 //            if(microserviceNames.contains(parser.generators[i].getMicroservice())){
 //                //Walk over all Microservices to get correct one
-//                for(int j = 0; j < parser.microservices.length ; j++){
-//                    //found correct micro service
 //                            }
 //
 //                            }
@@ -173,4 +171,5 @@ public class ArchModelValidator {
         }
     }
 }
+
 
