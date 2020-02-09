@@ -65,8 +65,6 @@ public class ArchModelValidator {
 //
 //            if(microserviceNames.contains(parser.monkeys[i].getMicroservice())){
 //                //walk over all microserives to adress correct one
-//                for(int j = 0; j < parser.microservices.length; j++){
-//                    //adress correct micro service
 //                        }
 //                    }
 //                }
@@ -180,4 +178,5 @@ public class ArchModelValidator {
         }
     }
 }
+
 
