@@ -32,23 +32,13 @@ public class ArchModelValidator {
 //                    //found correct micro service
 //                    if(parser.microservices[j].getName().equals(parser.generators[i].getMicroservice())){
 //                        //Walk over all operations
-//                        for (int k = 0; k < parser.microservices[j].getOperations().length; k++){
-//                            //Search for operation in correctly found micro service
-//                            if(parser.microservices[j].getOperations()[k].getName().equals(parser.generators[i].getOperation())){
-//                                continue outerLoop;
 //                            }
 //
-//                            //Last run was unsucessfull
-//                            if(k == parser.microservices[j].getOperations().length -1){
-//                                System.out.println("ERROR GENERATORS: Could not find operation : "
-//                                        + parser.generators[i].getOperation() + " : in micro service : " + parser.microservices[j].getName() );
-//                                errorCounter++;
 //                            }
 //                        }
 //                    }
 //                }
 //            } else {
-//                System.out.println("ERROR GERNERATORS: Could not find microservice : " + parser.generators[i].getMicroservice() + " : from generator number: " + i );
 //                errorCounter++;
 //            }
 //        }
@@ -185,3 +175,4 @@ public class ArchModelValidator {
         }
     }
 }
+
