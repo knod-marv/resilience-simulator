@@ -24,8 +24,6 @@ public class ArchModelValidator {
 //            Verify Generators
 //         */
 //        //Walk over all generators
-//        outerLoop : for (int i = 0; i < parser.generators.length; i++ ){
-//            //Know that searched for microservice exists  Microservice
 //                            }
 //
 //                            }
@@ -169,6 +167,7 @@ public class ArchModelValidator {
         }
     }
 }
+
 
 
 
