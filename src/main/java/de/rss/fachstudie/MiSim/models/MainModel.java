@@ -159,8 +159,7 @@ public class MainModel extends Model {
             long experimentTime = System.nanoTime() - tempTime;
             tempTime = System.nanoTime();
 
-            //exp.report();
-            exp.finish();
+                        exp.finish();
 
             if (!ExpModelParser.simulation_meta_data.get("report").equals("none")) {
                 ExportReport exportReport = new ExportReport(model);
@@ -474,3 +473,4 @@ public class MainModel extends Model {
         System.out.println(this.presentTime() + ": \t" + message);
     }
 }
+
