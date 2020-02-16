@@ -124,20 +124,6 @@ public class ArchModelValidator {
                     /*
                     Verify patterns in operations
                      */
-                    /*
-                    for (int patterns = 0; patterns < parser.microservices[microService].getOperations()[operation].getPatterns().length; patterns++) {
-
-                        if (!parser.microservices[microService].getOperations()[operation].getPatterns()[patterns].equals("Circuit Breaker")
-                                && !parser.microservices[microService].getOperations()[operation].getPatterns()[patterns].isEmpty()) {
-                            System.out.println("ERROR MICROSERVICES: Microservice: " + parser.microservices[microService].getName() + "operation: " +
-                                    parser.microservices[microService].getOperations()[operation].getName() + " -- uses a not verified pattern. " +
-                                    "Currently only \"Circuit Breaker\" is allowed");
-                            errorCounter++;
-                        }
-
-
-                    }
-                    */
 
                     //get targeted micro service
                     String tempMicroserviceName = parser.microservices[microService].getOperations()[operation].getDependencies()[dependencie].getService();
