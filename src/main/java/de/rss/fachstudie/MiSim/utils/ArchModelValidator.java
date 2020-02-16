@@ -24,12 +24,6 @@ public class ArchModelValidator {
 //            Verify Generators
 //         */
 //        //Walk over all generators
-//        outerLoop : for (int i = 0; i < parser.generators.length; i++ ){
-//            //Know that searched for microservice exists  Microservice
-//            if(microserviceNames.contains(parser.generators[i].getMicroservice())){
-//                //Walk over all Microservices to get correct one
-//                for(int j = 0; j < parser.microservices.length ; j++){
-//                    //found correct micro service
 //                    if(parser.microservices[j].getName().equals(parser.generators[i].getMicroservice())){
 //                        //Walk over all operations
 //                        for (int k = 0; k < parser.microservices[j].getOperations().length; k++){
