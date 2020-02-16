@@ -93,16 +93,6 @@ public class ArchModelValidator {
             /*
             Verify patterns in a microservice
              */
-            /*
-            for (int patterns = 0; patterns < parser.microservices[microService].getPatterns().length; patterns++) {
-                if (!parser.microservices[microService].getPatterns()[patterns].containsKey("Thread Pool") &&
-                        !parser.microservices[microService].getPatterns()[patterns].keySet().isEmpty()) {
-                    System.out.println("ERROR MICROSERVICE: Currently only Thread Pool Pattern in a microservices allowed. " +
-                            parser.microservices[microService].getName() + " has a different pattern.");
-                    errorCounter++;
-                }
-            }
-            */
 
 
             //walk over all operations
